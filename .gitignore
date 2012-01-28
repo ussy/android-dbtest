@@ -1,0 +1,10 @@
+.DS_Store
+.classpath
+.project
+*.properties
+dbunit/assets
+dbunit/bin
+dbunit/gen
+dbunit-test/assets
+dbunit-test/bin
+dbunit-test/gen
