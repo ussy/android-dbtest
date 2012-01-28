@@ -45,11 +45,11 @@ public class SQLiteUserDaoTest extends AndroidTestCase {
 
             User first = users.get(0);
             assertEquals("名前", "吉澤", first.getName());
-            assertEquals("作成日時", first.getCreatedAt(), new Date(1326361400));
+            assertEquals("作成日時", new Date(1326361400), first.getCreatedAt());
 
             User second = users.get(1);
             assertEquals("吉沢", second.getName());
-            assertEquals("更新日時", second.getUpdatedAt(), new Date(1326561600));
+            assertEquals("更新日時", new Date(1326561600), second.getUpdatedAt());
         } finally {
             db.close();
         }
