@@ -1,8 +1,8 @@
 
 package com.example.testdb.test.db.sqlite;
 
-import com.example.testdb.db.AppOpenHelper;
 import com.example.testdb.db.UserDao;
+import com.example.testdb.db.helper.AppOpenHelper;
 import com.example.testdb.db.sqlite.SQLiteUserDao;
 import com.example.testdb.model.User;
 

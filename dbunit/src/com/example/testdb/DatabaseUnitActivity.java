@@ -1,8 +1,8 @@
 
 package com.example.testdb;
 
-import com.example.testdb.db.AppOpenHelper;
 import com.example.testdb.db.UserDao;
+import com.example.testdb.db.helper.AppOpenHelper;
 import com.example.testdb.db.sqlite.SQLiteUserDao;
 import com.example.testdb.model.User;
 
@@ -20,7 +20,8 @@ public class DatabaseUnitActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        // SQLiteOpenHelper helper = MigrationOpenHelperFactory.create(getBaseContext());
+        // SQLiteOpenHelper helper =
+        // MigrationOpenHelperFactory.create(getBaseContext());
         SQLiteOpenHelper helper = new AppOpenHelper(getBaseContext());
         try {
             SQLiteDatabase db = helper.getReadableDatabase();
