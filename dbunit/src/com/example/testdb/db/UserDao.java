@@ -9,4 +9,10 @@ public interface UserDao {
     List<User> findAll();
     
     List<User> findByName(String name);
+    
+    void insert(User user);
+    
+    void update(User user);
+    
+    void delete(User user);
 }
