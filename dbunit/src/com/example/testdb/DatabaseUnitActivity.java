@@ -30,6 +30,7 @@ public class DatabaseUnitActivity extends Activity {
                 @SuppressWarnings("unused")
                 List<User> users = userDao.findAll();
                 // ArrayAdapter にセット
+                // ...省略
             } finally {
                 db.close();
             }
